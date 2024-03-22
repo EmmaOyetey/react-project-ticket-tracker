@@ -1,0 +1,72 @@
+.app {
+  color: #2d3436;
+}
+.app .appName {
+  text-align: center;
+  padding: 0 3.125rem;
+}
+.app .appName .appName__heading {
+  color: #2d3436;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.app .appName .greeting__heading,
+.app .appName .greeting__image {
+  margin: 1.25rem;
+}
+.app .button-section {
+  display: flex;
+  margin: 1.25rem auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.625rem;
+}
+.app .discover,
+.app .discography .discography__heading,
+.app .gallery .gallery__heading {
+  padding: 0 3.125rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .app {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 3.125rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
+  }
+  .app .greeting {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app .button-section {
+    display: none;
+  }
+  .app .discover {
+    grid-row: 3/4;
+    padding: 0;
+  }
+  .app .discography {
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    border-radius: 1rem;
+    display: grid;
+    gap: 1.5rem 6.25rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .app .discography .discography__heading {
+    padding: 0;
+    grid-column: 1/-1;
+  }
+  .app .gallery {
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+  }
+  .app .gallery .gallery__heading {
+    padding: 0;
+  }
+}/*# sourceMappingURL=App.css.map */
