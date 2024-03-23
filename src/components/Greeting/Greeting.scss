@@ -1,0 +1,12 @@
+@use "../../assets/styles/variables" as *;
+
+.greeting {
+  display: flex;
+  justify-content: center;
+  padding: 0 3.125rem;
+  margin: 1.25rem;
+
+  .message {
+    font-size: medium;
+  }
+}
