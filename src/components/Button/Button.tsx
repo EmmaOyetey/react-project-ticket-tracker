@@ -1,0 +1,15 @@
+import "./Button.scss";
+
+type ButtonProps = {
+    label : string;
+    style : "incDec" | "login";
+};
+
+const Button = ({label, style} : ButtonProps) => {
+    //console.log(props.label)
+    //const {label, style} = props;
+    const buttonStyles = `button button--${style}`
+    return <button className ={buttonStyles}>{label}</button>;
+};
+
+export default Button;

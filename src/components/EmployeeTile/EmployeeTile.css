@@ -1,0 +1,45 @@
+.artist-tile {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.625rem 1.25rem rgba(45, 52, 54, 0.25);
+}
+.artist-tile .artist-tile__image {
+  width: 100%;
+}
+.artist-tile .artist-tile__content {
+  position: absolute;
+  z-index: 1;
+  color: #ffffff;
+  bottom: 1.25rem;
+  left: 1.25rem;
+}
+.artist-tile .artist-tile__content > * {
+  margin: 0.625rem 0;
+}
+.artist-tile .artist-tile__content .artist-tile__heading {
+  font-size: 1.5rem;
+  margin: 1.25rem 0;
+}
+.artist-tile .artist-tile__content .artist-tile__cross {
+  position: absolute;
+  right: 1.25rem;
+  top: 0.75rem;
+}
+.artist-tile .artist-tile__content.artist-tile__content--back {
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 1.25rem;
+  overflow-y: auto;
+  background: rgba(45, 52, 54, 0.8);
+}
+.artist-tile:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(45, 52, 54, 0.5);
+}/*# sourceMappingURL=EmployeeTile.css.map */
