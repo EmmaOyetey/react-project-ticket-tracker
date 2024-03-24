@@ -2,7 +2,6 @@
 
 import './App.scss';
 import team from './data/team';
-import Teamtype from './types/TeamType';
 import GreetingMessage from './components/Greeting/Greeting';
 import Button from './components/Button/Button';
 import EmployeeTile from './components/EmployeeTile/EmployeeTile';
@@ -39,10 +38,38 @@ const getDayTimeMessage = (currentHour : number): string => {
 const currentHour : number = new Date().getHours();
 const dayTimeMessage = getDayTimeMessage(currentHour);  
 const todaysMessage = "no new messages today";
-const employeeTiles = team.map(employee => {
-  return <EmployeeTile key = {employee.id} name = {employee.name} role = {employee.role}/>
+//const employeeTiles = team.map(employee => {
+//  return <EmployeeTile key = {employee.id} name = {employee.name} role = {employee.role}/>
+//});
+ 
+const findMyTile = team.filter(team => {
+  return team.id === 4; 
+  console.log( myTile); {/*this will be my id = as entered and input read"*/}
 });
-  
+
+const myTile = findMyTile.map(myinfo =>{
+ return <EmployeeTile key = {myinfo.id} name = {myinfo.name} role = {myinfo.role}/>
+});
+
+//const myInfo = team.find(employee => employee.id === 2); // Assuming your ID is 2
+
+//const myTile = myInfo ? (
+//  <EmployeeTile key={myInfo.id} name={myInfo.name} role={myInfo.role} />
+//) : null;
+
+//const filterMyColleagues  = team.filter(colleague => {
+//  return colleague.id != 2; 
+
+//});
+
+//const myColleaguesTiles =  filterMyColleagues.map(colleague =>{
+ // return (
+ //     <div>
+ //     <p>below are my colleagues</p>  
+  //    <EmployeeTile key = {colleague.id} name = {colleague.name} role = {colleague.role}/>
+  //    </div>
+ // );
+ //});
   // const currentUser = need to get user to input id and then assign current user to currentUser
 
   return (
@@ -56,9 +83,8 @@ const employeeTiles = team.map(employee => {
       <section className = "counterSection">
       <Button label = "+" style = "incDec"/>
       <Button label = "-" style = "incDec"/>
-      {employeeTiles}
-      
-      
+      {myTile}
+ 
       </section>
 
 
