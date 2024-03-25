@@ -3,8 +3,8 @@
 import './App.scss';
 import team from './data/team';
 import GreetingMessage from './components/Greeting/Greeting';
-import Button from './components/Button/Button';
 import EmployeeTile from './components/EmployeeTile/EmployeeTile';
+//import { useState } from 'react';
 
  //const [count, setCount] = useState(0) removed this from the boiler plate
  //const getGreetingMessage = (hour: number): string => {
@@ -26,26 +26,7 @@ const getDayTimeMessage = (currentHour : number): string => {
 const currentHour : number = new Date().getHours();
 const dayTimeMessage = getDayTimeMessage(currentHour);  
 const todaysMessage = "no new messages today";
-//const employeeTiles = team.map(employee => {
-//  return <EmployeeTile key = {employee.id} name = {employee.name} role = {employee.role}/>
-//});
- 
-//const findMyTile = team.filter(team => {
-//  return team.id === 4; 
- // console.log( myTile); {/*this will be my id = as entered and input read"*/}
-//});
 
-//const myTile = findMyTile.map(myinfo =>{
-// return <EmployeeTile key = {myinfo.id} name = {myinfo.name} role = {myinfo.role}/>
-//});
-
-
-
-
-
-
- // add in sort myColleaguesTiles by count descending
-// const currentUser = need to get user to input id and then assign current user to currentUser remove hard code 4
 
   return (
     <div className = "app">
@@ -54,20 +35,13 @@ const todaysMessage = "no new messages today";
       <GreetingMessage dayTimeGreeting = {dayTimeMessage} todaysMessage= {todaysMessage}/>
        {/* need to add user name here <p>{greetingMessage}</p> */}
       </header>
-           {/*    <EmployeeTile name={team.name} role = {team.role}/> */}
-      <section className = "counterSection">
-      <Button label = "+" style = "incDec"/>
-      <Button label = "-" style = "incDec"/>
-      </section>
       <section className = "myTile">
         <h2 className = "myTile__heading">My ticket Tracker</h2>
-      {/*}  {myTile} */}
+      {/*}  {myTile} see code below adjust for login button and state*/}
       </section>
       <section className= "employee-tiles"></section>
       <h2 className = "employee-tiles__heading">Team ticket Tracker</h2>
-
-
-      <EmployeeTile team = {team}/>
+      <EmployeeTile team = {team} />
   
       
 
@@ -93,3 +67,24 @@ export default App
 //const myColleaguesTiles =  filterMyColleagues.map(colleague =>{
  //return <EmployeeTile key = {colleague.id} name = {colleague.name} role = {colleague.role}/>
  //});
+
+ //const employeeTiles = team.map(employee => {
+//  return <EmployeeTile key = {employee.id} name = {employee.name} role = {employee.role}/>
+//});
+ 
+//const findMyTile = team.filter(team => {
+//  return team.id === 4; 
+ // console.log( myTile); {/*this will be my id = as entered and input read"*/}
+//});
+
+//const myTile = findMyTile.map(myinfo =>{
+// return <EmployeeTile key = {myinfo.id} name = {myinfo.name} role = {myinfo.role}/>
+//});
+
+
+
+
+
+
+ // add in sort myColleaguesTiles by count descending
+// const currentUser = need to get user to input id and then assign current user to currentUser remove hard code 4

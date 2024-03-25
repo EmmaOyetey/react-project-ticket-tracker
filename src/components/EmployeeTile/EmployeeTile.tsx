@@ -1,13 +1,12 @@
 //import Button from './components/Button/Button';
 import "./EmployeeTile.scss";
 import TeamType from "../../types/TeamType";
-//import Counter from "../Counter/Counter";
-//once counter imported may need to add in
+import Counter from "../Counter/Counter";
+
 type EmployeeTileProps = {
     team:TeamType[];
-    //counter: number;
     };
-    //then ensure that counter is passed in a parameter and teamtype is updated to EmployeeTileProps
+
 
 const EmployeeTile = ({team} : EmployeeTileProps) => {
 
@@ -20,6 +19,7 @@ const EmployeeTile = ({team} : EmployeeTileProps) => {
                         <div className="employee-tile__content" key={teamMember.id}> 
                             <p>{teamMember.name as string}</p>
                             <p>{teamMember.role as string}</p>
+                            <Counter initialValue={0} owner = {teamMember.id}/>         
                         </div>
                     );
                 })}
@@ -31,3 +31,9 @@ const EmployeeTile = ({team} : EmployeeTileProps) => {
 
 
 export default EmployeeTile;
+
+    //then ensure that counter is passed in a parameter and teamtype is updated to EmployeeTileProps
+    //once counter established may want to sort on counter value highest to lowest 
+    //const highestCountTeamMember = [filterUserOut].sort(
+    //(a, b) => parseFloat(b.count) - parseFloat(a.count)
+    //);

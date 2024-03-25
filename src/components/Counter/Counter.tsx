@@ -1,21 +1,32 @@
-//import Button from "../Button/Button";
-//import "./Counter.scss";
+import "./Counter.scss";
+import {useState} from "react";
+import Button from "../Button/Button";
 
-//type CounterType = {
-//    counter: number;
-//};
+type CounterProps = {
+  initialValue : number;
+  owner : number;
+};
 
-//const Counter = ({counter } : CounterType) =>{
-//
-//    return (
- //       <div className = Counter>
-  //      //counter
- //       <div className = "counterSection">
- //       <Button label = "+" style = "incDec"/>
-//        <Button label = "-" style = "incDec"/>
-  //      </div>
-  //      </div>
- //   );
-//};
+const Counter = ({initialValue} : CounterProps) =>{
 
-//export default Counter;
+const [counter,setCounter] = useState<number>(initialValue);
+
+  const handleIncrementClick =() => {
+    setCounter (counter+1);};
+
+  const handleDecrementClick =() => {
+    if (counter> 0){
+    setCounter (counter-1);}
+  };
+
+  return (
+    <div className = "counter">
+        <Button label = "+" style = "inc" onClick={handleIncrementClick} />
+        <p className="counter__total">{counter}</p>
+        <Button label = "-" style = "Dec" onClick={handleDecrementClick} />
+    </div>
+    );
+};
+
+export default Counter;
+

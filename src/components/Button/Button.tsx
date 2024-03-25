@@ -2,7 +2,8 @@ import "./Button.scss";
 
 type ButtonProps = {
     label : string;
-    style : "incDec" | "login";
+    style : "inc" | "Dec" | "login";
+    onClick: () => void; 
 };
 
 const Button = ({label, style} : ButtonProps) => {

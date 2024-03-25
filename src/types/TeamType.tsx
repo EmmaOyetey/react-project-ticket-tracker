@@ -2,7 +2,7 @@
 //
 type Teamtype = {
 
-id?: number,
+id: number,
 name: string,
 role: string,
 profile?: {
