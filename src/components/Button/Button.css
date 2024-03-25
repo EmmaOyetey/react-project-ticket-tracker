@@ -2,12 +2,15 @@
   min-width: 1.5rem;
   padding: 0.625rem 0.625rem;
   border-radius: 1rem;
+  background-color: rgb(48, 206, 206);
 }
-.button.button--incDec {
-  background-color: orange;
-  border: none;
+.button .button--incDec {
+  min-width: 1.5rem;
+  padding: 0.625rem 0.625rem;
+  border-radius: 1rem;
+  background-color: rgb(48, 206, 206);
 }
-.button.button--login {
+.button .button--login {
   background-color: transparent;
   border: 0.125rem solid #5dadb0;
 }/*# sourceMappingURL=Button.css.map */

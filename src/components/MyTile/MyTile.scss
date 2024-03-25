@@ -1,0 +1,44 @@
+@use "../../assets/styles/variables" as *;
+
+.my-tile {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.625rem 1.25rem rgba($color-black, 0.25);
+
+  .my-tile__content {
+    position: absolute;
+    z-index: 1;
+    color: $color-white;
+    bottom: 1.25rem;
+    left: 1.25rem;
+
+    .my-tile__heading {
+      font-size: 1.5rem;
+      margin: 1.25rem 0;
+      color: blueviolet;
+    }
+
+
+  }
+}
+
+
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .album-tiles {
+    padding-right: 3.125rem;
+    padding-bottom: 3.125rem;
+    border-radius: 1rem;
+
+    .album-tiles__content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .album-tiles__image {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

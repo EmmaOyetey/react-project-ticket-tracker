@@ -1,0 +1,34 @@
+.my-tile {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.625rem 1.25rem rgba(45, 52, 54, 0.25);
+}
+.my-tile .my-tile__content {
+  position: absolute;
+  z-index: 1;
+  color: #ffffff;
+  bottom: 1.25rem;
+  left: 1.25rem;
+}
+.my-tile .my-tile__content .my-tile__heading {
+  font-size: 1.5rem;
+  margin: 1.25rem 0;
+  color: blueviolet;
+}
+
+@media screen and (min-width: 62rem) {
+  .album-tiles {
+    padding-right: 3.125rem;
+    padding-bottom: 3.125rem;
+    border-radius: 1rem;
+  }
+  .album-tiles .album-tiles__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .album-tiles .album-tiles__content .album-tiles__image {
+    width: 100%;
+    margin: 0;
+  }
+}/*# sourceMappingURL=MyTile.css.map */

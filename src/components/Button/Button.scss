@@ -4,13 +4,17 @@
   min-width: 1.5rem;
   padding: 0.625rem 0.625rem;
   border-radius: 1rem;
+  background-color: rgb(48, 206, 206);
 
-  &.button--incDec {
-    background-color: orange;
-    border: none;
+
+ .button--incDec {
+  min-width: 1.5rem;
+  padding: 0.625rem 0.625rem;
+  border-radius: 1rem;
+  background-color: rgb(48, 206, 206);
   }
 
-  &.button--login{
+  .button--login{
     background-color: transparent;
     border: 0.125rem solid $color-primary;
   }

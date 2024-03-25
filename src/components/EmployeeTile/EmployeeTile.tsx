@@ -1,7 +1,7 @@
 //import Button from './components/Button/Button';
-import "./EmployeeTile.scss";
+//import "./EmployeeTile.scss";
 import TeamType from "../../types/TeamType";
-import Counter from "../Counter/Counter";
+//import Counter from "../Counter/Counter";
 
 type EmployeeTileProps = {
     team:TeamType[];
@@ -10,7 +10,8 @@ type EmployeeTileProps = {
 
 const EmployeeTile = ({team} : EmployeeTileProps) => {
 
-    const filterUserOut = team.filter( teamMember =>  teamMember.id !== 2); // Filters out team members whose ID is not equal to 2(user)
+    const filterUserOut = team.filter( teamMember =>  teamMember.id !== 2); 
+// Filters out team members whose ID is not equal to 2(user)
     
     return (
         <div className="employee-tile">
@@ -19,7 +20,7 @@ const EmployeeTile = ({team} : EmployeeTileProps) => {
                         <div className="employee-tile__content" key={teamMember.id}> 
                             <p>{teamMember.name as string}</p>
                             <p>{teamMember.role as string}</p>
-                            <Counter initialValue={0} owner = {teamMember.id}/>         
+                            <p>Total Tickets Completed = ${}</p>     
                         </div>
                     );
                 })}

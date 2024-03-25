@@ -4,6 +4,8 @@ import './App.scss';
 import team from './data/team';
 import GreetingMessage from './components/Greeting/Greeting';
 import EmployeeTile from './components/EmployeeTile/EmployeeTile';
+import MyTile from './components/MyTile/MyTile';
+
 //import { useState } from 'react';
 
  //const [count, setCount] = useState(0) removed this from the boiler plate
@@ -35,15 +37,15 @@ const todaysMessage = "no new messages today";
       <GreetingMessage dayTimeGreeting = {dayTimeMessage} todaysMessage= {todaysMessage}/>
        {/* need to add user name here <p>{greetingMessage}</p> */}
       </header>
-      <section className = "myTile">
-        <h2 className = "myTile__heading">My ticket Tracker</h2>
+      <section className = "my-tile"></section>
+      <MyTile team = {team}/>
       {/*}  {myTile} see code below adjust for login button and state*/}
-      </section>
+     
       <section className= "employee-tiles"></section>
       <h2 className = "employee-tiles__heading">Team ticket Tracker</h2>
       <EmployeeTile team = {team} />
   
-      
+     
 
 
 
