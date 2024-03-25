@@ -21,4 +21,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 1rem;
+}
+.app .employee-tiles__heading {
+  margin-left: 2.4rem;
+  color: rgb(4, 60, 60);
 }/*# sourceMappingURL=App.css.map */

@@ -16,9 +16,9 @@ if (!myTile) { return "tile not found"};
 return (
             <div className="my-tile__content">
                     
-                    <p className = "my-tile__welcome">Welcome {myTile.name}</p>
+                    <p className = "my-tile__welcome">{myTile.name}</p>
                     <Counter owner = {myTile.id} initialValue = {0} />
-                    <p className = "my-tile__info"> Keep Track of completed Tickets Here</p>     
+                    <p className = "my-tile__info"> Keep Track of completed Tickets here</p>     
             </div>
         );
 };
