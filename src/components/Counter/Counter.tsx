@@ -1,6 +1,6 @@
 import "./Counter.scss";
 import {useState} from "react";
-import Button from "../Button/Button";
+//import Button from "../Button/Button";
 
 
 type CounterProps = {
@@ -8,7 +8,7 @@ type CounterProps = {
   owner : number;
 };
 
-const Counter = ({initialValue} : CounterProps) =>{
+const Counter = ({initialValue, owner} : CounterProps) =>{
 
 const [counter,setCounter] = useState<number>(initialValue);
 
@@ -22,9 +22,11 @@ const [counter,setCounter] = useState<number>(initialValue);
 
   return (
     <div className = "counter">
-        <Button label = "+" style = "incDec"onClick={handleIncrementClick} />
+        
+        <button className = "button--incDec" onClick={handleIncrementClick}></button>
         <p className="counter__total">{counter}</p>
-        <Button label = " -" style = "incDec" onClick={handleDecrementClick} />
+        <button className = "button--incDec" onClick={handleDecrementClick}></button>
+       
     </div>
     );
 };
