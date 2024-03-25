@@ -1,27 +1,21 @@
 @use "../../assets/styles/variables" as *;
-
-.my-tile {
-  position: relative;
+ 
+.my-tile__content {
+  margin-left: 1.5rem;
+  background-color: gray;
   border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 0.625rem 1.25rem rgba($color-black, 0.25);
+  max-width: 18rem;
+  padding: 2rem;
 
-  .my-tile__content {
-    position: absolute;
-    z-index: 1;
-    color: $color-white;
-    bottom: 1.25rem;
-    left: 1.25rem;
-
-    .my-tile__heading {
+    .my-tile__welcome { 
       font-size: 1.5rem;
-      margin: 1.25rem 0;
-      color: blueviolet;
+      margin: 0;
+      color: rgb(4, 60, 60);
+      font-weight: 400;
     }
 
-
-  }
 }
+  
 
 
 

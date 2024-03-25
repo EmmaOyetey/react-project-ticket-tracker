@@ -22,9 +22,9 @@ const [counter,setCounter] = useState<number>(initialValue);
 
   return (
     <div className = "counter">
-        <Button label = "+" style = "inc"onClick={handleIncrementClick} />
+        <Button label = "+" style = "incDec"onClick={handleIncrementClick} />
         <p className="counter__total">{counter}</p>
-        <Button label = "-" style = "Dec" onClick={handleDecrementClick} />
+        <Button label = " -" style = "incDec" onClick={handleDecrementClick} />
     </div>
     );
 };

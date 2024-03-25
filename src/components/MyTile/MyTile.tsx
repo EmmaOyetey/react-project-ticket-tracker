@@ -1,4 +1,4 @@
-//import "./MyTile.scss";
+import "./MyTile.scss";
 import TeamType from "../../types/TeamType";
 //import team from "../../data/team";
 import Counter from "../Counter/Counter";
@@ -15,10 +15,10 @@ const MyTile = ({team} : MyTileProps) => {
 if (!myTile) { return "tile not found"};         
 return (
             <div className="my-tile__content">
-                    <h2 className = "my-tile__heading">My ticket Tracker</h2>
+                    
                     <p className = "my-tile__welcome">Welcome {myTile.name}</p>
                     <Counter owner = {myTile.id} initialValue = {0} />
-                    <p className = "my-tile__info">Total Tickets Completed = Counter[0]</p>     
+                    <p className = "my-tile__info"> Keep Track of completed Tickets Here</p>     
             </div>
         );
 };

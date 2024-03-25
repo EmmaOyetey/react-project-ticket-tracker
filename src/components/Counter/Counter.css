@@ -1,1 +1,9 @@
-/*# sourceMappingURL=Counter.css.map */
+.counter {
+  display: flex;
+  justify-content: space-between;
+  max-width: 9rem;
+  padding: 2 rem;
+  border-radius: 2rem;
+  background-color: grey;
+  margin: 1rem;
+}/*# sourceMappingURL=Counter.css.map */
