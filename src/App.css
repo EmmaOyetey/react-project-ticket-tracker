@@ -10,20 +10,15 @@
   font-size: 2rem;
   font-weight: bold;
 }
-
-@media screen and (min-width: 62rem) {
-  .app {
-    max-width: 75rem;
-    margin: 0 auto;
-    display: grid;
-    gap: 3.125rem;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, min-content);
-  }
-  .app .greeting {
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.app .user-section {
+  display: flex;
+  justify-content: space-around;
+}
+.app .user-section .welcome-info {
+  font-size: 2rem;
+}
+.app .employee-tile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=App.css.map */

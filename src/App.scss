@@ -8,28 +8,25 @@
       padding: 0 3.125rem;
     }
 
-      .appName__heading {
-        color: $color-black;
+    .appName__heading {
+      color: $color-black;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .user-section {
+      display: flex;
+      justify-content: space-around;
+
+      .welcome-info{
         font-size: 2rem;
-        font-weight: bold;
-      }
-  }
-
-
-@media screen and (min-width: $desktop-breakpoint) {
-    .app {
-      max-width: 75rem;
-      margin: 0 auto;
-      display: grid;
-      gap: 3.125rem;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, min-content);
-
-      .greeting {
-        text-align: left;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
     }
-}
+
+    .employee-tile {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
