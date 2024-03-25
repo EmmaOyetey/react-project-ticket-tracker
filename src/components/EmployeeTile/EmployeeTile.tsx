@@ -1,5 +1,5 @@
 //import Button from './components/Button/Button';
-//import "./EmployeeTile.scss";
+import "./EmployeeTile.scss";
 import TeamType from "../../types/TeamType";
 //import Counter from "../Counter/Counter";
 
@@ -18,9 +18,9 @@ const EmployeeTile = ({team} : EmployeeTileProps) => {
                 {filterUserOut.map(teamMember => {
                     return (
                         <div className="employee-tile__content" key={teamMember.id}> 
-                            <p>{teamMember.name as string}</p>
-                            <p>{teamMember.role as string}</p>
-                            <p>Total Tickets Completed = ${}</p>     
+                            <p className = "employee-tile__colleague-name">{teamMember.name as string}</p>
+                            <p className = "employee-tile__job-role">{teamMember.role as string}</p>
+                            <p>Total Tickets Completed = </p>     
                         </div>
                     );
                 })}
