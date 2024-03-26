@@ -1,7 +1,7 @@
 //import Button from './components/Button/Button';
 import "./EmployeeTile.scss";
 import TeamType from "../../types/TeamType";
-//import Counter from "../Counter/Counter";
+import Counter from "../Counter/Counter";
 
 type EmployeeTileProps = {
     team:TeamType[];
@@ -20,6 +20,7 @@ const EmployeeTile = ({team} : EmployeeTileProps) => {
                         <div className="employee-tile__content" key={teamMember.id}> 
                             <p className = "employee-tile__colleague-name">{teamMember.name as string}</p>
                             <p className = "employee-tile__job-role">{teamMember.role as string}</p>
+                            <Counter initialValue={0} owner = {teamMember.id}/>
                             <p>Total Tickets Completed = </p>     
                         </div>
                     );
