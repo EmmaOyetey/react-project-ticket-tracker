@@ -1,5 +1,6 @@
 .app {
   color: #2d3436;
+  padding: 1rem;
 }
 .app .appName {
   text-align: center;
@@ -13,17 +14,22 @@
 .app .user-section {
   display: flex;
   justify-content: space-around;
+  max-height: 12 rem;
 }
 .app .user-section .welcome-info {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  max-height: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .app .employee-tile {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 1rem;
 }
 .app .employee-tiles__heading {
-  margin-left: 2.4rem;
+  margin-left: 3rem;
   color: rgb(4, 60, 60);
 }/*# sourceMappingURL=App.css.map */

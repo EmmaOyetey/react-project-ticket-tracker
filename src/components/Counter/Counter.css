@@ -6,4 +6,12 @@
   border-radius: 2rem;
   background-color: grey;
   margin: 1rem;
+}
+
+.button--incDec {
+  min-width: 2rem;
+  padding: 0.625rem 0.625rem;
+  border-radius: 1rem;
+  background-color: rgb(48, 206, 206);
+  font-size: larger;
 }/*# sourceMappingURL=Counter.css.map */
