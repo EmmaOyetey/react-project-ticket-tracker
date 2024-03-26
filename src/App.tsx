@@ -5,7 +5,7 @@ import team from "./data/team";
 import GreetingMessage from "./components/Greeting/Greeting";
 import EmployeeTile from "./components/EmployeeTile/EmployeeTile";
 import MyTile from "./components/MyTile/MyTile";
-import FindAColleague from "./container/FindAColleague.tsx";
+import FindAColleague from "./container/FindAColleague";
 
 //import { useState } from 'react';
 
@@ -51,7 +51,7 @@ const App = () => {
         < EmployeeTile team={team} />
       </section>
       <section className = "searchColleagues" >
-     < FindAColleague />
+     < FindAColleague team={team}/>
       </section>
     </div>
   );
