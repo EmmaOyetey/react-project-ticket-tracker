@@ -38,10 +38,10 @@ const App = () => {
       </header>
       <section className = "user-section">
           <div className = "welcome-info">
-                  <GreetingMessage
+              <GreetingMessage
               dayTimeGreeting={dayTimeMessage}
               todaysMessage={todaysMessage}
-            /> 
+              /> 
           </div>
           <div className="my-tile">
             <MyTile team={team} />
@@ -51,9 +51,7 @@ const App = () => {
    
       <section className = "searchColleagues" >
      < FindAColleague team={team}/>
-      </section>
-      <section>
-        <FilterJobRoles team = {team}/>
+      <FilterJobRoles team = {team}/>
       </section>
       <section className="employee-tiles">
         < EmployeeTile team={team} />

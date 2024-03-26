@@ -2,31 +2,14 @@
   margin-left: 1.5rem;
   background-color: gray;
   border-radius: 1rem;
-  max-width: 16rem;
+  max-width: 18rem;
   padding: 2rem;
 }
 .my-tile__content .my-tile__welcome {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   margin: 0;
-  color: rgb(4, 60, 60);
-  font-weight: 400;
 }
-.my-tile__content .my-tile__info {
+.my-tile__content .employee-tile__info {
   font-size: 1rem;
-}
-
-@media screen and (min-width: 62rem) {
-  .album-tiles {
-    padding-right: 3.125rem;
-    padding-bottom: 3.125rem;
-    border-radius: 1rem;
-  }
-  .album-tiles .album-tiles__content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .album-tiles .album-tiles__content .album-tiles__image {
-    width: 100%;
-    margin: 0;
-  }
 }/*# sourceMappingURL=MyTile.css.map */
