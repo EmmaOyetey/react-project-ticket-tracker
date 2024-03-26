@@ -6,6 +6,7 @@ import {useState} from "react";
 type CounterProps = {
   initialValue : number;
   owner : number;
+  
 };
 
 const Counter = ({initialValue, owner} : CounterProps) =>{

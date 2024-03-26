@@ -1,11 +1,16 @@
+
+
 // import {useState} from "react";
-// import { TeamType } from "../../types/TeamType";
+// import { FormEventHandler } from "react";
+// import TeamType from "../../types/TeamType";
 
 
 // type LoginProps {
-//     team : TeamType[];
+//   team : TeamType[];
+//   label : string;
+//   handleInput :FormEventHandler
 
-// };
+//  };
 
 
 

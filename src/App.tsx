@@ -5,6 +5,7 @@ import team from "./data/team";
 import GreetingMessage from "./components/Greeting/Greeting";
 import EmployeeTile from "./components/EmployeeTile/EmployeeTile";
 import MyTile from "./components/MyTile/MyTile";
+import FindAColleague from "./container/FindAColleague.tsx";
 
 //import { useState } from 'react';
 
@@ -45,10 +46,12 @@ const App = () => {
             <MyTile team={team} />
           </div>   
       </section>
-      {/*}  {myTile} see code below adjust for login button and state*/}
               <h2 className="employee-tiles__heading">Team ticket Tracker</h2>
       <section className="employee-tiles">
         < EmployeeTile team={team} />
+      </section>
+      <section className = "searchColleagues" >
+     < FindAColleague />
       </section>
     </div>
   );
