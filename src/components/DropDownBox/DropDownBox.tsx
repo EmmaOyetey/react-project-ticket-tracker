@@ -1,14 +1,14 @@
 import { ChangeEventHandler,} from "react";
-import "./DropDownBox.scss";
+//import "./DropDownBox.scss";
 
 type DropDownBoxProps = {
   label: string;
   searchTerm: string;
-  handleInput: ChangeEventHandler<HTMLSelectElement>;
-  options : string[];
+  items: string[];
+  handleInput2: ChangeEventHandler<HTMLSelectElement>;
 };
 
-const DropDownBox = ({ label, searchTerm, handleInput }: DropDownBoxProps) => {
+const DropDownBox = ({ label, searchTerm, items, handleInput2 }: DropDownBoxProps) => {
   const capitalizedLabel = label[0].toUpperCase() + label.slice(1);
 
 //const jobRoles = Array.from(new Set(team.map(colleague => colleague.role)));
@@ -18,18 +18,20 @@ const DropDownBox = ({ label, searchTerm, handleInput }: DropDownBoxProps) => {
         <div className = "search-box__byRole">
         <label htmlFor={label} className="search-box__label">{capitalizedLabel}</label>
         <select 
-                id={label} 
-                name={label}
-                value={searchTerm} 
-                onChange={handleInput} 
-                className="search-box__dropdown"
-                >
-                <option value="">{label.toLowerCase()}...</option>
-                {options .map((option : string, index : number) => (
-                <option key={index} value={option}>
-                    {option}
-                    </option>
-          ))}
+            id={label} 
+            name={label}
+            value={searchTerm} 
+            onChange={handleInput2} 
+            className="search-box__dropdown"
+            >
+            <option value = "" >Select a Job Role</option>
+            <option value = "Junior Software Developer">Junior Software Developer</option>
+             <option value="">{label.toLowerCase()}...</option>
+                {items.map((item : string, index : number) => (
+                <option key={index} value={item}>
+                    {item}
+                    </option> 
+          ))} */
         </select>
             
         </div>   

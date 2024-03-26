@@ -3,14 +3,14 @@ import DropDownBox from "../components/DropDownBox/DropDownBox";
 import TeamType from "../types/TeamType";
 import EmployeeTile from "../components/EmployeeTile/EmployeeTile";
 
-type FilterByJobTypeProps = {
+type FilterJobRolesProps = {
   team: TeamType[];
 };
 
-const FilterByJobType= ({team}: FilterByJobTypeProps) => {
+const FilterJobRoles= ({team}: FilterJobRolesProps) => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
-  const handleInput = (event: ChangeEvent<HTMLSelectElement>) => {
+  const handleInput2 = (event: ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = event.target.value;
     setSearchTerm(selectedValue);
   };
@@ -26,13 +26,13 @@ const FilterByJobType= ({team}: FilterByJobTypeProps) => {
     <>
       <DropDownBox
         label="job roles"
-        handleInput={handleInput}
+        handleInput2={handleInput2}
         searchTerm={searchTerm}
-        options = {jobRoles}
+        items = {jobRoles}
       />
       <EmployeeTile team={filteredColleagues} />
     </>
   );
 };
 
-export default FilterByJobType;
+export default FilterJobRoles;

@@ -6,6 +6,7 @@ import GreetingMessage from "./components/Greeting/Greeting";
 import EmployeeTile from "./components/EmployeeTile/EmployeeTile";
 import MyTile from "./components/MyTile/MyTile";
 import FindAColleague from "./container/FindAColleague";
+import FilterJobRoles from "./container/FilterJobRoles";
 
 //import { useState } from 'react';
 
@@ -52,6 +53,9 @@ const App = () => {
       </section>
       <section className = "searchColleagues" >
      < FindAColleague team={team}/>
+      </section>
+      <section>
+        <FilterJobRoles team = {team}/>
       </section>
     </div>
   );
