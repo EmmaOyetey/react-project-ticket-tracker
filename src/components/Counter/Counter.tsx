@@ -9,7 +9,7 @@ type CounterProps = {
   
 };
 
-const Counter = ({initialValue, owner} : CounterProps) =>{
+const Counter = ({initialValue, owner,} : CounterProps) =>{
 
 const [counter,setCounter] = useState<number>(initialValue);
 
@@ -24,7 +24,7 @@ const [counter,setCounter] = useState<number>(initialValue);
   return (
     <div className = "counter">
         
-        <button className = "button--incDec" onClick={handleIncrementClick}>+</button>
+        <button className = "button--incDec"  onClick={handleIncrementClick}>+</button>
         <p className="counter__total">{counter}</p>
         <button className = "button--incDec" onClick={handleDecrementClick}>-</button>
        

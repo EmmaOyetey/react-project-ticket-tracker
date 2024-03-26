@@ -48,15 +48,16 @@ const App = () => {
           </div>   
       </section>
               <h2 className="employee-tiles__heading">Team ticket Tracker</h2>
-      <section className="employee-tiles">
-        < EmployeeTile team={team} />
-      </section>
+   
       <section className = "searchColleagues" >
      < FindAColleague team={team}/>
       </section>
       <section>
         <FilterJobRoles team = {team}/>
       </section>
+      <section className="employee-tiles">
+        < EmployeeTile team={team} />
+      </section> */ 
     </div>
   );
 };

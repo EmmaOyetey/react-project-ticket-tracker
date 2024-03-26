@@ -25,7 +25,7 @@ const FilterJobRoles= ({team}: FilterJobRolesProps) => {
   return (
     <>
       <DropDownBox
-        label="job roles"
+        label="Find Tickets By Job Role"
         handleInput2={handleInput2}
         searchTerm={searchTerm}
         items = {jobRoles}

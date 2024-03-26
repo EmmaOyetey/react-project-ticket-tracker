@@ -22,11 +22,11 @@ const FindAColleague= ({team}: FindAColleagueProps) => {
   return (
     <>
       <SearchBox
-        label="colleagues"
+        label="Enter a colleague's name to check out their performance"
         handleInput={handleInput}
         searchTerm={searchTerm}
       />
-      <EmployeeTile team={filteredColleagues} />
+      {searchTerm && <EmployeeTile team={filteredColleagues} />}
     </>
   );
 };

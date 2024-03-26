@@ -1,0 +1,28 @@
+.search-box {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.125rem;
+}
+.search-box .search-box__label {
+  font-size: 1.25rem;
+  margin-right: 1.25rem;
+}
+.search-box .search-box__dropdown {
+  margin: 1.25rem 0;
+  padding: 0.625rem;
+  font-size: 1.125rem;
+  border: 0.313rem #d1d1e9 solid;
+  border-radius: 1rem;
+  color: #2d3436;
+  padding-left: 1rem;
+}
+.search-box .search-box__dropdown:focus {
+  border: 0.313rem #5dadb0 solid;
+  outline: none;
+}
+
+@media screen and (min-width: 62rem) {
+  .search-box .search-box__input {
+    width: calc(33.3333333333% - 3.125rem);
+  }
+}/*# sourceMappingURL=DropDownBox.css.map */

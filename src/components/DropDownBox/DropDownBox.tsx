@@ -1,5 +1,5 @@
 import { ChangeEventHandler,} from "react";
-//import "./DropDownBox.scss";
+import "./DropDownBox.scss";
 
 type DropDownBoxProps = {
   label: string;
@@ -25,8 +25,6 @@ const DropDownBox = ({ label, searchTerm, items, handleInput2 }: DropDownBoxProp
             className="search-box__dropdown"
             >
             <option value = "" >Select a Job Role</option>
-            <option value = "Junior Software Developer">Junior Software Developer</option>
-             <option value="">{label.toLowerCase()}...</option>
                 {items.map((item : string, index : number) => (
                 <option key={index} value={item}>
                     {item}
