@@ -34,7 +34,6 @@ const App = () => {
     <div className="app">
       <header className="appName">
         <p className="appName__heading">Ticket Tracker</p>
-        {/* need to add user name here <p>{greetingMessage}</p> */}
       </header>
       <section className = "user-section">
           <div className = "welcome-info">
@@ -47,15 +46,19 @@ const App = () => {
             <MyTile team={team} />
           </div>   
       </section>
-              <h2 className="employee-tiles__heading">Team ticket Tracker</h2>
-   
-      <section className = "searchColleagues" >
-     < FindAColleague team={team}/>
-      <FilterJobRoles team = {team}/>
+             
+          <h2 className="employee-tiles__heading">Team ticket Tracker</h2>
+      <section>
+          <section className = "search-Colleagues" >
+            <FindAColleague team={team}/>
+            <FilterJobRoles team = {team}/>
+          </section>
+          <section className="employee-tiles">
+            < EmployeeTile team={team} />
+          </section> 
       </section>
-      <section className="employee-tiles">
-        < EmployeeTile team={team} />
-      </section> */ 
+
+
     </div>
   );
 };

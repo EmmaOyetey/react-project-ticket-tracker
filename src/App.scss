@@ -6,13 +6,14 @@
 
     .appName {
       text-align: center;
-      padding: 0 3.125rem;
+      padding: 0 2rem;
     }
 
     .appName__heading {
       color: $color-black;
       font-size: 2rem;
       font-weight: bold;
+      margin: 1rem;
     }
 
     .user-section {
@@ -41,5 +42,13 @@
       margin-left: 3rem;
       color: rgb(4, 60, 60);
     }
+
+    .search-colleagues {
+      display: flex;
+      flex-direction: row;
+    }
+
   }
 
+
+ 
