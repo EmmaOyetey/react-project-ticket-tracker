@@ -3,7 +3,8 @@
 .search-box {
   display: flex;
   flex-direction: column;
-  padding: 0 3.125rem;
+  text-align: center;
+  padding: 0 2rem;
 
   .search-box__label {
     font-size: 1.25rem;
@@ -11,13 +12,13 @@
   }
 
   .search-box__dropdown {
-    margin: 1.25rem 0;
+    margin: 1rem 0;
     padding: 0.625rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
     border: 0.313rem $color-grey solid;
     border-radius: 1rem;
     color: $color-black;
-    padding-left: 1rem;
+    max-width:13rem;
 
     &:focus {
       border: 0.313rem $color-primary solid;
