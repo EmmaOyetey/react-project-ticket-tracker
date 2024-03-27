@@ -10,6 +10,8 @@
   }
 
   .search-box__input {
+    display: flex;
+    justify-content: center;
     margin: 1.25rem 0;
     padding: 0.625rem;
     font-size: 1.125rem;
@@ -27,7 +29,9 @@
 @media screen and (min-width: $desktop-breakpoint) {
   .search-box {
     .search-box__input {
-      width: calc((100% / 3) - 3.125rem);
+      width: calc((100% / 3) - 3rem);
+      display: flex;
+      justify-content: center;
     }
   }
 }

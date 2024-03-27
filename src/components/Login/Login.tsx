@@ -9,12 +9,9 @@
 //   team : TeamType[];
 //   label : string;
 //   handleInput :FormEventHandler
-
 //  };
 
-
-
-// const LoggedIn = ({team}: LoginProps) => {
+// const loggedIn = ({team}: LoginProps) => {
 //     const [showLogin, setShowLogin] = useState<Boolean>(false);
 
 //     const handleLogin = () => {
