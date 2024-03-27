@@ -31,7 +31,7 @@
 @media screen and (min-width: $desktop-breakpoint) {
   .search-box {
     .search-box__input {
-      width: calc((100% / 3) - 3rem);
+      width: calc((100% / 3) - 1rem);
       display: flex;
       justify-content: center;
     }

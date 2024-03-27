@@ -25,7 +25,7 @@
 
 @media screen and (min-width: 62rem) {
   .search-box .search-box__input {
-    width: calc(33.3333333333% - 3rem);
+    width: calc(33.3333333333% - 1rem);
     display: flex;
     justify-content: center;
   }
