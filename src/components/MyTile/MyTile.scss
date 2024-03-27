@@ -1,14 +1,12 @@
 @use "../../assets/styles/variables" as *;
  
 .my-tile__content {
-  margin-left: 1.5rem;
   background-color: gray;
   border-radius: 1rem;
   max-width: 18rem;
-  padding: 2rem;
+  padding: 1.5rem;
 
-
-  .my-tile__welcome{
+  .my-tile__name{
     font-size: 1.2rem;
     font-weight: 500;
     margin: 0;

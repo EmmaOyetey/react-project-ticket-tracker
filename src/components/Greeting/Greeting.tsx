@@ -13,9 +13,9 @@ type GreetingProps = {
 
 
     return (
-      <div>
-      <p>{dayTimeGreeting}</p> 
-      <p>{todaysMessage}</p>
+      <div className = "greeting">
+      <p className = "greeting-time">{dayTimeGreeting}</p> 
+      <p className = "greeting-news">{todaysMessage}</p>
       </div>
     );
   };

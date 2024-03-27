@@ -28,7 +28,7 @@ const App = () => {
 
   const currentHour: number = new Date().getHours();
   const dayTimeMessage = getDayTimeMessage(currentHour);
-  const todaysMessage = "No new messages today";
+ 
 
   return (
     <div className="app">
@@ -36,15 +36,11 @@ const App = () => {
         <p className="appName__heading">Ticket Tracker</p>
       </header>
       <section className = "user-section">
-          <div className = "welcome-info">
-              <GreetingMessage
+            <GreetingMessage
               dayTimeGreeting={dayTimeMessage}
-              todaysMessage={todaysMessage}
               /> 
-          </div>
-          <div className="my-tile">
             <MyTile team={team} />
-          </div>   
+
       </section>
              
           <h2 className="employee-tiles__heading">Team ticket Tracker</h2>
