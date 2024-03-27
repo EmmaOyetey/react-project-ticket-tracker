@@ -9,7 +9,7 @@ type CounterProps = {
   
 };
 
-const Counter = ({initialValue, owner,} : CounterProps) =>{
+const Counter = ({initialValue,} : CounterProps) =>{
 
 const [counter,setCounter] = useState<number>(initialValue);
 
