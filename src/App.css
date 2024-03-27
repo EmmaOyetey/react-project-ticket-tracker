@@ -4,23 +4,19 @@
 }
 .app .appName {
   text-align: center;
-  padding: 0 3.125rem;
+  padding: 0 2rem;
 }
 .app .appName__heading {
   color: #2d3436;
   font-size: 2rem;
   font-weight: bold;
+  margin: 1rem;
 }
 .app .user-section {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   max-height: 12 rem;
-}
-.app .user-section .welcome-info {
-  font-size: 1.4rem;
-  max-height: 4rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .app .employee-tile {
   display: flex;
@@ -28,8 +24,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 1rem;
+  margin-top: 0;
 }
 .app .employee-tiles__heading {
-  margin-left: 3rem;
+  text-align: center;
   color: rgb(4, 60, 60);
 }/*# sourceMappingURL=App.css.map */

@@ -1,9 +1,14 @@
 .greeting {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 0 3.125rem;
-  margin: 1.25rem;
+  padding: 0 1rem;
+  argin: 1rem;
 }
-.greeting .message {
-  font-size: medium;
+.greeting .greeting-time {
+  font-size: 1.7rem;
+}
+.greeting .greeting-news {
+  font-size: 1rem;
+  display: none;
 }/*# sourceMappingURL=Greeting.css.map */

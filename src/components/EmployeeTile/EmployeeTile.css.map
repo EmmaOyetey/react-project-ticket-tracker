@@ -1,1 +1,1 @@
-{"version":3,"sources":["EmployeeTile.scss","EmployeeTile.css"],"names":[],"mappings":"AAEA;EACI,mBAAA;EACA,sBAAA;EACA,mBAAA;EACA,gBAAA;EACA,aAAA;EACA,YAAA;ACDJ;ADGI;EACE,iBAAA;EACA,gBAAA;EACA,SAAA;ACDN;ADII;EACE,eAAA;ACFN","file":"EmployeeTile.css"}
+{"version":3,"sources":["EmployeeTile.scss","EmployeeTile.css"],"names":[],"mappings":"AAEA;EACI,mBAAA;EACA,sBAAA;EACA,mBAAA;EACA,gBAAA;EACA,gBAAA;EACA,iBAAA;EACA,aAAA;EACA,YAAA;ACDJ;ADGI;EACE,iBAAA;EACA,gBAAA;EACA,SAAA;ACDN;ADII;EACE,eAAA;ACFN","file":"EmployeeTile.css"}
